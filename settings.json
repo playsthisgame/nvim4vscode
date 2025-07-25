@@ -34,5 +34,5 @@
       "statusBar.debuggingBackground": "#ff8c1a",
       "statusBar.debuggingForeground": "#fbf1c7"
     },
-    "workbench.colorTheme": "Gruvbox Dark (Medium)",
+    "workbench.colorTheme": "Gruvbox Dark Medium",
 }
