@@ -8,3 +8,4 @@ This is the closest I can get to making vscode feel like my neovim set up
 - [vscode-search-everywhere](https://github.com/kbysiec/vscode-search-everywhere)
 - [todo-tree](github.com/Gruntfuggly/todo-tree.git)
 - [gruvbox-themes-vscode](https://github.com/tomphilbin/gruvbox-themes-vscode)
+- [vscode-material-icon-theme](https://github.com/material-extensions/vscode-material-icon-theme)
