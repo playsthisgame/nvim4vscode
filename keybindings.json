@@ -65,6 +65,11 @@
   },
   {
     "key": "space t",
+    "command": "workbench.action.closePanel",
+    "when": "vim.mode == 'Normal' && (editorTextFocus && panelVisible)"
+  },
+  {
+    "key": "space t",
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminalFocus"
   },
