@@ -98,6 +98,16 @@
     "command": "workbench.view.extensions",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
+  {
+    "key": "cmd+[",
+    "command": "workbench.action.navigateBack",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "cmd+]",
+    "command": "workbench.action.navigateForward",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
 
   // Coding
   {
@@ -145,7 +155,7 @@
     "command": "workbench.action.quickOpen",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
-  {
+  { // why doesnt this work?
     "key": "space f g",
     "command": "searchEverywhere.search",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
@@ -160,10 +170,15 @@
     "command": "fuzzySearch.activeTextEditor",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
-  {
+  { 
+    "key": "space f t",
+    "command": "workbench.view.extension.todo-tree-container",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  { // escape todo tree
     "key": "escape",
-    "command": "closeFindWidget",
-    "when": "findWidgetVisible"
+    "command": "workbench.action.closeSidebar",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || (activeViewlet == 'workbench.view.extension.todo-tree-container'))"
   },
   {
     "key": "space g d",
@@ -283,5 +298,16 @@
     "key": "space d c",
     "command": "workbench.action.debug.continue",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && inDebugMode && debugState == 'stopped'"
+  },
+  {
+    "key": "space d h",
+    "command": "editor.debug.action.showDebugHover",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && inDebugMode && debugState == 'stopped'"
+  },
+  {
+    "key": "escape",
+    "command": "hideSuggestWidget",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && inDebugMode && debugState == 'stopped'"
   }
+
 ]
