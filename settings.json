@@ -1,0 +1,6 @@
+{
+  // all default values are implied, including vim, I might add my vim settings later...
+  "workbench.editor.enablePreview": true,
+  "workbench.editor.revealIfOpen": true,
+  "workbench.editor.showTabs": false
+}
