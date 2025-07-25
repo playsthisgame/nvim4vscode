@@ -68,9 +68,9 @@
     "command": "workbench.action.closePanel",
     "when": "vim.mode == 'Normal' && (editorTextFocus && panelVisible)"
   },
-  {
-    "key": "space t",
-    "command": "workbench.action.terminal.toggleTerminal",
+  { // is there a better key for this?
+    "key": "ctrl+shift+t",
+    "command": "workbench.action.closePanel",
     "when": "terminalFocus"
   },
   {
@@ -91,6 +91,11 @@
   {
     "key": "space h 1",
     "command": "vscode-harpoon.gotoEditor1",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space x",
+    "command": "workbench.view.extensions",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
 
@@ -142,7 +147,7 @@
   },
   {
     "key": "space f g",
-    "command": "workbench.action.findInFiles",
+    "command": "searchEverywhere.search",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
   {
@@ -152,8 +157,13 @@
   },
   {
     "key": "space f s",
-    "command": "actions.find",
+    "command": "fuzzySearch.activeTextEditor",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "escape",
+    "command": "closeFindWidget",
+    "when": "findWidgetVisible"
   },
   {
     "key": "space g d",
