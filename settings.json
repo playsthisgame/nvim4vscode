@@ -1,5 +1,6 @@
 {
     // all default values are implied, including vim, I might add my vim settings later...
+    "editor.lineNumbers": "relative",
     "vim.useSystemClipboard": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.showTabs": "single",
@@ -25,12 +26,13 @@
                                  "**/dist/**"],
     "searchEverywhere.include": "**/*.{js,jsx,ts,tsx,java,yml,xml,json,go,py}",
     "searchEverywhere.shouldInitOnStartup": true,
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {
       "statusBar.background": "#3c3836",
       "statusBar.foreground": "#ebdbb2",
       "statusBar.noFolderBackground": "#3c3836",
-      "statusBar.debuggingBackground": "#cc241d",
+      "statusBar.debuggingBackground": "#ff8c1a",
       "statusBar.debuggingForeground": "#fbf1c7"
-    }
+    },
+    "workbench.colorTheme": "Gruvbox Dark (Medium)",
 }
