@@ -142,7 +142,7 @@
   },
   {
     "key": "space s x",
-    "command": "workbench.action.closeGroup",
+    "command": "workbench.action.closeEditorsInGroup",
     "when": "(vim.mode == 'Normal' && editorTextFocus) || !inputFocus"
   },
   {
