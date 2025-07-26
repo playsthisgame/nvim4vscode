@@ -35,4 +35,7 @@
       "statusBar.debuggingForeground": "#fbf1c7"
     },
     "workbench.colorTheme": "Gruvbox Dark Medium",
+    "editor.tabSize": 2,
+    "todo-tree.tree.groupBy": "none",
+    "workbench.editor.empty.hint": "hidden",
 }
