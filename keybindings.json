@@ -142,6 +142,11 @@
   },
   {
     "key": "space s x",
+    "command": "workbench.action.closeGroup",
+    "when": "(vim.mode == 'Normal' && editorTextFocus) || !inputFocus"
+  },
+  {
+    "key": "space s d",
     "command": "workbench.action.closeActiveEditor",
     "when": "(vim.mode == 'Normal' && editorTextFocus) || !inputFocus"
   },
